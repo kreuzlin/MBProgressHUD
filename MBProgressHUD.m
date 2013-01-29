@@ -725,6 +725,17 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 	}
 }
 
+#pragma mark Accessibility
+
+-(NSString *)accessibilityHint{
+    
+    return @"Zum Abbrechen des Vorgangs antippen.";
+}
+
+-(BOOL)isAccessibilityElement{
+    return YES;
+}
+
 @end
 
 
