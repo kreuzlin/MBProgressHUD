@@ -337,6 +337,11 @@ typedef void (^MBProgressHUDCompletionBlock)();
 @property (assign) float yOffset;
 
 /**
+ * The size of the visible loading view.
+ */
+@property (atomic, assign) CGSize size;
+
+/**
  * The amount of space between the HUD edge and the HUD elements (labels, indicators or custom views). 
  * Defaults to 20.0
  */
